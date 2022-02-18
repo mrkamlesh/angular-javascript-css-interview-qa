@@ -1,3 +1,115 @@
+------------------
+JS Interview QnA
+------------------
+
+
+Find the output of the following
+==========================
+let z = function () {
+  
+  if (true) {
+    console.log(y)
+    console.log(m)
+    
+    var y = 2;
+    let m = 3;
+  }
+}
+var y = 100;
+z();
+
+
+------output------------
+ = undefined
+ = Uncaught ReferenceError: Cannot access 'm' before initialization
+&
+  //console.log(y) = 2
+  //console.log(m) = Uncaught ReferenceError: m is not defined
+----------------
+
+==========JS================
+this Keyword
+How does JavaScript and JavaScript engine work?
+
+Closures in JavaScript? advantage..
+hoisting in JavaScript?
+
+Event loop in JS.
+              What is the temporal dead zone? let vs var.
+              Service worker vs web worker.
+              call, apply & bind
+callback vs promise
+es6 features, arrow function, spreed oparator=>[...]
+
+javaScript Array methods => filter, map, some, find, reduce
+javascript shallow copy and deep copy
+
+=============Angular============
+bootstraps the application Root Module - What is main.ts?
+
+<router-outlet></router-outlet>
+
+Component Life Cycle Look? - ngOnChanges vs ngDoCheck
+
+What is the difference between pure and impure pipe?
+How to share data with siblings, child-parent, route params
+
+
+What are the class decorators in Angular?
+
+lazy loading   ===>  @Injectable({    providedIn: 'root'  })
+
+Template driven forms and reactive forms
+
+property binding is done using "[ ]" attribute and 
+event binding is done using "( )" attribute.
+
+How to catch error in forkJoin?
+ng-template vs ng-container
+
+  What is Reactive Programming? What do you understand by RxJS?
+
+What is Subject? Diff between BehaviorSubject and Observable in RxJS?
+mergemap vs switchmap
+
+What is the use of forRoot and forChild in Angular? - we should call forChild() in feature modules because forRoot() was already called in the root module 
+
+What is difference between ViewChild and ViewChildren?
+What is difference between JIT and AOT?
+
+service worker vs web worker
+What are the security principles in angular?
+
+============HTML============
+<!DOCTYPE html>
+html4 vs html5
+
+
+
+============CSS============
+Pseudo-classes vs pseudo-elements 
+What is CSS pre processor?
+CSS grid vs flexbox
+
+
+------------output------------
+
+2+'5'+3			 => '253'
+-2+'5'+3		 => '-253'
+2-'5'+3			 => 0
+2+'5'-7			 => 18
+
+typeof null 					=== 'object';
+typeof undefined 				=== undefined;
+
+typeof Infinity 				=== 'number';
+typeof NaN 						=== 'number';
+typeof (typeof 1) 				=== 'string';
+typeof {a: 1} 					=== 'object';
+typeof [1, 2, 4] 				=== 'object';
+typeof function () {}  			=== 'function'
+
+
 
 1) Deference between Angular js and angular. Can we use jQuery instead of angular or react?
   
