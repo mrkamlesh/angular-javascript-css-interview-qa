@@ -2,33 +2,8 @@
 JS Interview QnA
 ------------------
 
+What is this Keyword?
 
-Find the output of the following
-==========================
-let z = function () {
-  
-  if (true) {
-    console.log(y)
-    console.log(m)
-    
-    var y = 2;
-    let m = 3;
-  }
-}
-var y = 100;
-z();
-
-
-------output------------
- = undefined
- = Uncaught ReferenceError: Cannot access 'm' before initialization
-&
-  //console.log(y) = 2
-  //console.log(m) = Uncaught ReferenceError: m is not defined
-----------------
-
-==========JS================
-this Keyword
 How does JavaScript and JavaScript engine work?
 
 Closures in JavaScript? advantage..
@@ -361,34 +336,30 @@ reduce function
 arrow function vs function
 call, apply vs bind
 subject vs behabearsubject
-mjhjmj,..kj
 
-
-
-
-To generate android build:
-set ANDROID_SDK_ROOT=D:\work\sdk
-set JAVA_HOME=D:\work\java\jdk1.8.0_65
-set PATH=%PATH%;D:\work\sdk\platforms\android-27;D:\work\gradle\gradle\gradle-6.5\bin;D:\work\sdk\platform-tools
-Q. Tell me something about yourself?
-Your name: My name is Ashwani Sharma
-Place: Basically I am from Distt. Muzaffarnagar UP. Currently I have been staying in Noida since 2007.
-Academic qualification: I have graduated from Kalinga University Raipur. My highest qualification is MCA.
-Experience: I am carrying an experience of 10 years in UI and Front End Development. I have good hands on HTML5, CSS3, JavaScript, Angular 2, Bootstrap, jQuery.
-Family So for my family background is concerned we are 3 brothers and 1 sister.
-Hobbies Watching informative videos and  walking
+	
+	
+	
 
 Q. What is the High Level architecture of Angular, how it renders on page?
+
 Q. How angular inject components, like parent component, child component?
+
 Q. How do you start your project?
 https://blog.angularindepth.com/setting-up-angular-from-scratch-1f518c65d8ab
 
+
 Q. What is Lazy loading and what are the principles of Lazy Loading and how to integrate it?
+
 Q. draw the UI of your project on paper.
+
 Q. when logging in the application what happens internally, what angular does internally?
+
 Q. have you faced any compatibility issue in IE browser and other browsers?
+
 Q. What is the command to generate components using CLI?
 ng generate Content ComponentName
+
 
 Q. How many types of directives in angular ?
 There are 3 types of directives in Angular:
@@ -403,11 +374,14 @@ Example: *ngIf, *ngFor, *ngSwitch ( structural directives has asterisk (*) befor
 Attribute directives are used to change the behaviour of the DOM element. 
 Example: ngStyle, ngClass
 
+
 Q. What is ngStyle? how to integrate? What is the syntax? What is the type of ngStyle?
+
 
 Q. What is viewChild in angular?
 “The Child Element which is located inside the component template”, 
 viewChild is a decorator, using viewChild we can inject components, directives or elements inside the template.
+
 
 Q. What is an Interceptor ? How to integrate an Interceptor ?
 Adding the extra information over the http request is called interceptor, by making a clone of that request and add request in that clone
@@ -415,9 +389,11 @@ Adding the extra information over the http request is called interceptor, by mak
 Steps to implement interceptor:
 1.	Include packages [ HTTP_INTERCEPTOR] in app.module.ts and declares in providers also
 
+
 Q. What is Provider in Angular?
 Provider is an Inversion of control (IOC) container.
 Providers are classes that create and manage service objects. Provider is used to register the classes to an angular module as a service. And then, this service class can be used by other components during itself creation phase in the module.
+
 
 Q. What is the Singleton pattern how to achieve?
 Static object or Global object is known as Singleton. We write a program in a way that it will create Static object.
@@ -425,6 +401,7 @@ In Singleton we create a private constructor, so that it can not be instantiated
 If a class has Private constructor it can’t have member functions.
 
 Routing, auth guard, pipe, service, directives, decorators, push notifications, interceptor, error handling, rxjs(dbounce, mergemap)
+
 Q. What is JSON web token? What are the advantages of JSON web token? How to integrate JSON web token? How JSON web token works?
 Advantages:
 No Session to manage (stateless): JWT is self contained digitally signed, has authentication info and expire time info it has header, body and digital signature
@@ -432,63 +409,118 @@ Portable: A single token can be used with multiple backends
 No cookies required, it is mobile friendly
 Decoupled/Decentralized: can be generated anywhere
 
+
 Q. What is sms protocol?
+
 Q. What is a Decorator in Angular?
+
 Q. How to create Custom Directive in Angular, what is the method (create to change bg of element)?
+
 Q. How to create a Custom Pipe in Angular What is the method inside the custom pipe ?
+
 Q. What is the Pipe annotation?
+
 Q. What is the method to apply Pipe?
+
 Q. How to integrate Pipe?
+
 Q. What is Angular Universal?
+
 Q. How to handle multiple Events using Observable?  => fromEvent  then Observable.merge
+
 Q. What is the difference between Native and Responsive application?
+
 Q. What is the best search pattern for mobile apps?
+
 Q. How to integrate multilingual support in the app?
+
 Q. What is change detection in Angular?
 1.	ChangeDetectionStrategy.Default 
 2.	ChangeDetectionStrategy.onPush
+
 Q. How JavaScript works in the browser? Or How Browsers read JavaScript?
+
 Q. What is Tree Shakable in Angular?  => Tree shaking is a build step which removes unused code from the code base at build time.
+
 Q. Difference between JIT and AOT?
+
 Q. What is @ViewChild and @ViewChildren in Angular?
+
 Q. Difference between template driven and reactive forms in Angular?
+
 Q. What is Rout resolver in Angular? How to load Heavy DOM in Angular?
+
 Q. Component lifecycle hook and difference between them. [ UX Trendz best video for this]
+
 Q. What is Angular Transpiling how it works?
+
 Q. What is Host Binding in Angular?
+
 Q. What is the difference between *ngIf and ngHidden?
+
 Q. How to get route param data? Using paramMap().get method
 Host binding is used in custom directive to transform content for example: apply class or attribute to the host element.
+
 Q. What is the HostListener in Angular?
+
 Q. What is the difference between Constructor() and ngOnInit(). 
+
 Q. Why incremental DOM slower than Virtual DOM?
+
 Q. What are the steps to integrate third party API in the project.
+
 Q. How to integrate popup for the user logging in first time?
+
 Q. What is the difference between Service and Component?
+
 Q. What is service data type?
+
 Q. What is http call return type?
+
 Q. How to get 2 or more than 1 API data in one go? Using forkJoin() method
+
 Q. What are the Generics in Angular?
+
 Q. What are the ways to download Components in Angular?
+
 Q. What is Snapshot in Angular?
+
 Q. What is queryparams and queryselector in Angular?
+
 Q. Can we apply multiple AuthGuard to a single route? Yes by putting comma separated guard names inside canActivate array like this : canActivate: [GuardOne, GuardTwo]
+
 Q. Steps to integrate an Angular Form in the project [Reactive or Template Driven] ?
+
 Q. How to inject Service? How Service communicate? What are the Service methods?
+
 Q. What is the difference between Factory and Service?
+
 Q. Can we change the name of canActivate method inside component? Ans. No [it will show error]
+
 Q. What is the difference between CanActivate and CanActivateChild ?   ===========
+
 Q. Difference between Ang 7 and Ang 8?
+
 Q. How to handle error in Observable?
+
 Q. How to use cookies in Angular?
+
 Q. How to make app compatible in different browser IE, EDGE, Chrome, Firefox?
+
 Q. Encryption decryption in JavaScript . for example password encryption.
+
 Q. What is Angular CLI? 
+
 Q. How to load select menu in ngOnInit() lifecycle?
+
 Q. How to make HTML elements editable? Ans. using contenteditable =”true” method
+
 Q. How to create prod build?
+
 Q. What is the difference between ng serve, ng build and ng build prod?
+
 Q. What is Micro Content?
+
 Q. How to handle multiple api requests using mergeMap and forkJoin in Angular to avoid multiple subscription?
 So when do we apply mergeMap?
 mergeMap
@@ -505,88 +537,153 @@ We use it when API requests are independent. It means that they do not depend on
 Combine mergeMap and forkJoin
  
 
+
 Q. What is Interface?
 A class is a blueprint from which we can create objects that share the same configuration - properties and methods. An interface is a group of related properties and methods that describe an object, but neither provides implementation nor initialisation for them.
+
 Q. How to exclude files at build time in angular?
+
 Q. What is the difference between Model and Interface?
+
 Q. What is Abstract Class and Component in Angular?
+
 Q. What is ViewEncapsulation and ShadowDOM?
+
 Q. What is a template outlet?
+
 Q. Difference between ng-container and ng-template? 
 Ng-container create node while ng-template don’t create any node.
+
 Q. What is ActivatedRoute and DeactivatedRoute?
+
 Q. What is Metadata in Angular?
+
 Q. What is Multicasting in Angular?
 broadcasting to a list of multiple subscribers in a single execution.
+
 Q. routes dependency in Angular
 	Need minimum 2 components.
+
 Q. What is the Router state in Angular?
 A router state is an arrangement of application components that defines what is visible on the screen
+
 Q. What are wildcard routes in Angular, what will happen if we will put a wildcard route in the beginning?
+
 Q. What is a State function?
+
 Q. How to load components dynamically?
+
 Q. Tabs behavior in Angular?
+
 Q. Pure and impure pipe Angular pipe
+
 Q. What types of Injections in Angular?
+
 Q. What is Abstract Class and Components in Angular?
+
 Q. How to use Authentication API?
+
 Q. What is switchMap, mergeMap and difference between them?
+
 Q. Angular common module ( where v have http, httpModule, httpClient etc )?
+
 Q. How to pass parameters in routes? Ans. using ( /:id ).
+
 Q. What is ngrx library? How to handle State? How to handle Storage in ngrx? How ngrx storage is differ from Local and Session storage?
+
 Q. What is ngx bootstrap?
+
 Q. What is the difference between FormGroup and FormBuilder?
+
 Q. What is @viewChild scope in lifecycle hooks ? Ans. in ngOnInt() only.
+
 Q. What will return a form when it is valid? Ans. it will return Object.
+
 Q. How to apply form validation on fly ( dynamically )?
+
 Q. What is functional programming?
 Below is the link for @parent @child component communication using @Input, @Output:
 https://www.youtube.com/watch?v=3srOOe_hI-I
 
 JavaScript
+
 Q. What is “use strict” mode in JavaScript? 
 Ans. “use strict” is a directive which defines that JavaScript code will be executed in Strict Mode. With “use strict” mode for example, we can not use undeclared variables.
 Mistyping a variable name creates a new global variable. In strict mode, this will throw an error, making it impossible to accidentally create a global variable.
+
 Q. What is reactive programming?
+
 Q. How to get n dimensional array in ES6?
+
 Q. What are the coding guidelines you have used? For example access modifier : public, private
+
 Q. What are the disadvantages of JavaScript?
+
 Q. DateTimePicker(). How to pick only date ? Ans. using date method
+
 Q. What is Debounce and Throttle?
+
 Q. What are the advantages of JavaScript?
+
 Q. What are the differences between Client side and Server side JavaScript?
+
 Q. What is deep and shallow copy in Javascript? What is by default?
+
 Q. What is BOM? Ans => BOM is a Browser Object Model which has Window and Document object model inside it.
+
 Q. Difference between ECMA Script and JavaScript ?
+
 Q. Diff. between Window object and Document object in JavaScript?
+
 Q. How to use JavaScript page function in another javascript page? Like page1. js function into page2.js
 Ans. Exporting function or methods form page1.js and importing in page2.js
+
 Q. Scope in JavaScript.
+
 Q. Instance methods in JavaScript?
+
 Q. onClick call multiple API’s with a single method?
+
 Q. What is RXJS library? 
 
 
+
 Q. What is setTimeout in JavaScript? 
+
 Q. What is setInterval in JavaScript? 
+
 Q. What is the difference between null and undefined?
+
 Q. What is arrow function, what are the advantages of arrow function? 
 https://www.youtube.com/watch?v=wV3HQbg9oaw
 https://www.youtube.com/watch?v=qdvGXSUk7Mo
 
+
 Q. What Event loop in JavaScript? 
+
 Q. What is Event bubbling and Event capturing in JavaScript?  Note: [ this works as parent & child relationship ]
+
 Q. what callback, promise, closure, observable, async, await, anonymous, IIFE function? 
+
 Q. what is scoping (let, const, var) JavaScript?
+
 Q. What is class, constructor, inheritance in JavaScript?
+
 Q. What is classical and prototype inheritance in JavaScript?
+
 Q. Difference between Classical and Prototype inheritance?
 
+
 Q. What is _ _proto_ _ in JavaScript? 
+
 Q. What is Template Literal in JavaScript? 
+
 Q. What is a Destructuring assignment in JavaScript? 
+
 Q. What are the High Order Function ( sort, filter, slice, push, map, index, indexOf, forEach, reduce, each, every  ) JavaScript?
+
 Q. What is the REST and SPREAD operator in JavaScript?
+
 Q. What is call, apply and bind in JavaScript? 
 
 call()	apply()	bind()
@@ -624,14 +721,23 @@ var bound = functionName.bind(obj);
 bound(arg1,arg2,arg3);
 
 
+
 Q. What is For in and For of in JavaScript? 
+
 Q. What is Symbol data & Map, set, weakMap, weakSet in JavaScript? 
+
 Q. object methods in JavaScript? 
+
 Q. string methods in JavaScript? 
+
 Q. array methods in JavaScript? 
+
 Q. currying function in JavaScript? 
+
 Q. async operation( fetch API ) in JavaScript? 
+
 Q. What is call by Value and call by reference in JavaScript?
+
 Q. What is the difference between forEach() and map() method?
 Ans.
 	map()		forEach()
@@ -641,19 +747,33 @@ Ans.
 map() method		If we don’t want to returned anything, we need to use 
 forEach()
 
+
 Q. PROXY reflections in JavaScript? 
+
 Q. recursion in JavaScript? 
+
 Q. web workers in JavaScript? 
+
 Q. What are the Iterators in JavaScript?
+
 Q. generators in JavaScript? 
+
 Q. How to create an object of Prototype?
+
 Q. What is the difference between local Storage and session storage 
+
 Q. array.prototype in JavaScript
+
 Q. calculate no. of days between two dates
+
 Q. What is JavaScript (void:0)
+
 Q. Expression Function
+
 Q. map()
+
 Q. *ngFor – index methods 
+
 Q. What is observable and what is the usage of Observable
 The Observable isn’t an Angular specific feature, but a new standard for managing async data that was included in the ES7 release. Angular uses observables extensively in the event system and the HTTP service.
 Observables are a new way of pushing data in JavaScript. An observable is a Producer of multiple values, “pushing” them to subscribers.
@@ -672,7 +792,9 @@ We subscribe to an observable in our template using the async pipe. The benefit 
 Manner 2:
 We subscribe to the observable ourselves using the actual subscribe() method. 
 
+
 Q. How do you write custom service?
+
 
 Q. Component communication, parent to child and child to parent ?
 There are two types of component communication based on below situation
@@ -690,16 +812,21 @@ There are two types of component communication based on below situation
 5.	@EventEmitter + Output
 6.	Behaviour Subject
 
+
 Q. Angular component compatibility issue in IE ?
+
 
 Q. What is call() apply() and bind() function? Diff. between Call vs Bind?
 https://www.youtube.com/watch?v=PoRJizFvM7s
+
 
 Q. Async JS Crash Course - Callbacks, Promises, Async Await ?
 https://www.youtube.com/watch?v=PoRJizFvM7s
 https://www.youtube.com/watch?v=SWWl1o0LT1I&feature=youtu.be [asynchronous programing]
 
+
 Q. What is lexical scope in JavaScript?
+
 Q. What is method chaining in JavaScript?
 
 What is promise
@@ -714,18 +841,25 @@ promise.allsettled
 promise.race
 https://www.youtube.com/watch?v=UFdv0DDVGrs
 
+
 Q. Hoisting in JavaScript? Benefits of Hoisting?
+
 Q. What will happen if there is not Hoisting in JavaScript? Ans => Can not use variable before declaring it.
+
 Q. Garbage collector in JavaScript?
+
 Q. If we have multiple angular pipes together, in which order they will execute
 A.	In parallel
 B.	LIFO order
 C.	In the order which pipes are declared  
 D.	None of the above	
+
 Q. What is the difference between PUT and POST?
+
 Q. What is the difference between Agile and Scrum technology?
 
 OnPassive
+
 Q. What is the difference between async and defer?
 defer
 DOMContentLoaded event handler waits for the deferred script. It only triggers when the script is downloaded and executed.
@@ -799,41 +933,39 @@ In the above example, the Fibonacci function calls itself if the number is great
 
 
 jQuery
+
 Q. How to open any specific Accordion using jQuery?
 Using active keyword and passing index value of Accordion item like below:
 $("#accordion").accordion({ active: 2 });
+
 Q. difference between $each and forEach?
 forEach() is a build in Array method and $each() can be used on any type of collection and to use $each we need to include jQuery
+
 Q. which method you will use in jQuery to iterate over an array $each or forEach?
 forEach()
-Q. have you used any jQuery plugin?
-what is method chaining in jQuery
-diff between .get .ajax in jQuery
-how to detect https and http anchor tags
-$('a[href*="http:"]').click(function(){
-            alert('Success! Selected link starting with http in href.');
-            });
-        });
-<a href="http://demo" title="new" >Demo1</a><br>
-<a href="https://demo" title="new" >Demo2</a><br>
-<a href="#demo" title="new" >Demo4</a><br>
-<a href="/cplusplus/" title="C++ Tutorial" >C++</a>
-
-onclick next arrow how next image slides behind the seen bootstrap slider
-
-
+	
+	
+	
 HTML
+
 Q. What is the doctype? What it does? And what if it is not used?
+
 Q. What are the Web Sockets?
 The WebSocket API is an advanced technology that makes it possible to open a two-way interactive communication session between the user's browser and a server. With this API, you can send messages to a server and receive event-driven responses without having to poll the server for a reply.
+
 Q. What are Server sent events?
 Ans. A server-sent event is when a web page automatically gets updates from a server.
 Examples: Facebook/Twitter updates, stock price updates, news feeds, sport results, etc.
+
 Q. What is accessibility in HTML5?
+
 Q. can we use multiple header and footer on a page? Ans. Yes
 
+
 Q. What are your key strengths apart from your technical skills?
+
 Q. HTML5 main features
+
 Q. Difference between HTML4 and HTML5
 1.	Simplify and clear syntax, for example: Doctype difference
 2.	Multimedia ( HTML4 need : silverlight or adobe flash player )
@@ -841,14 +973,22 @@ Q. Difference between HTML4 and HTML5
 4.	Client server comm. ( HTML4 had lengthy cumbersome process now easy through Web Sockets )
 5.	JavaScript multithread threading ( inbuilt JS Web worker API to run JavaScript and browser UI runs on different thread  )
 6.	Geolocation
+
 Q. What are the semantic elements in html5?
+
 Q. What are the new form tags in HTML5?
+
 Q. What is <iframe> ? use cases of <iframe> ?
+
 Q. How to show a longer text string in a single line dynamically?
+
 Q. How to make HTML pages compatible in older browsers?
+
 Q. have you used any client base element in HTML?
+
 Q. What is the difference between cookies and cache?
 Cookies used to store information related to the user while cache is used to make the loading of web pages faster.
+
 Q. difference between Cookies and Storage?
 
 Cookies		Storage	
@@ -856,24 +996,42 @@ Cookies are primarily for reading server-side		Storage can only be read by clien
 Cookies has the limit of 4096 bytes (4096 bytes per cookie)		Storage has the limit of 5MB per domain	
 		Stores data in key-value pairs	
 
+
 Q. What is Local storage and Session Storage?
+
 Q. How to set value in Local and Session storage?
+
 Q. How to make HTML4 responsive?
+
 Q. Canvas in HTML5.
+
 Q. API’s in HTML5, which API’s you have used?
+
 Q. difference between <b> and <strong> tag?
+
 Q. Run video in a banner
 CSS
+
 Q. How many types of Position are there in CSS?
+
 Q. What is the default position of HTML elements?
+
 Q. What is Grid layout in CSS?
+
 Q. What is Flexbox in CSS?
+
 Q. What are the CSS methodologies?
+
 Q. What is Object Oriented CSS?
+
 Q. CSS3 Animations (Transition, transform, keframe)
+
 Q. Difference between units (pixels, em, rem)
+
 Q. Box model 
+
 Q. How to set 16 columns in bootstrap grid 
+
 Q. How to make existing non responsive application responsive
 
 Sass
@@ -895,18 +1053,31 @@ Project architecture explanation (module to module integration)	2
 Tech Lead Questions
 
 
+
 Q. What are the development environments?
+
 Q. How many types of development environments?
+
 Q. How to create development environments?
+
 Q. What are the differences between Production, Dev, UAT, QA ?
+
 Q. How to handle different API URLs for different environments?
+
 Q. Is it possible to host any app without Node?
+
 Q. How to set up a project ?
+
 Q. What are the requirements to set up a project in a different environment?
+
 Q. Difference between Git and SVN?
+
 Q. how you merge code
+
 Q. Development methodologies
+
 Q. how frequently you deploy code on Staging and Production
+
 Q. Change detection
 
 
